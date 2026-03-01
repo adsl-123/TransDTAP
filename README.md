@@ -54,11 +54,6 @@ Both data splitting strategies are provided:
 ```
 TransDTAP/
 │
-├── data/
-│   ├── processed_dataset.csv
-│   ├── random_split_indices.json
-│   ├── scaffold_split_indices.json
-│
 ├── preprocessing/
 │   ├── descriptor_generation.py
 │   ├── protein_feature_extraction.py
@@ -75,7 +70,6 @@ TransDTAP/
 │
 ├── experiments/
 │   ├── default_config.yaml
-│   ├── ablation_configs.yaml
 │
 ├── interpretability/
 │   ├── shap_analysis.py
@@ -132,12 +126,6 @@ python training/train.py --config experiments/default_config.yaml
 
 ```
 python training/evaluate.py --checkpoint path/to/best_model.pt
-```
-
-### Running ablation experiments
-
-```
-python training/train.py --config experiments/ablation_configs.yaml
 ```
 
 ---
